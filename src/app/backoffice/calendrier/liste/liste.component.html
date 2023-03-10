@@ -1,1 +1,173 @@
-<p>liste works!</p>
+
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="liste.component.scss">
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <main class="table">
+        <section class="table__header">
+            <h1>Liste de projet</h1>
+            <div class="input-group">
+                <input type="search" placeholder="Search Data...">
+                <img src="images/search.png" alt="">
+            </div>
+            <button class="ajout_projet"><i class="fa-sharp fa-solid fa-plus"></i></button>
+           <!--<div class="export__file">
+                <label for="export-file" class="export__file-btn" title="Export File"></label>
+                <input type="checkbox" id="export-file">
+                <div class="export__file-options">
+                    <label>Export As &nbsp; &#10140;</label>
+                    <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                    <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                    <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                    <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                </div>
+            </div> -->
+        </section>
+        <section class="table__body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>priorité<i class="fa-solid fa-arrow-up"></i></th>
+                        <th>Categorie <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Partie intervenantes <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Order Date <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Type de signature  <span class="icon-arrow">&UpArrow;</span></th>
+                        <th>Budget<span class="icon-arrow">&UpArrow;</span></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                       <!--<img src="images/Zinzu Chan Lee.jpg" alt="">Zinzu Chan Lee</td>--> <td> 
+                        <td> Seoul </td>
+                        <td> 17 Dec, 2022 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong> 128.90  DT</strong></td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td>Jeet Saru </td>
+                        <td> Kathmandu </td>
+                        <td> 27 Aug, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>5350.50DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    <tr>
+                        <td> 3</td>
+                        <td> Sonal Gharti </td>
+                        <td> Tokyo </td>
+                        <td> 14 Mar, 2023 </td>
+                        <td>
+                            <p class="status shipped">Shipped</p>
+                        </td>
+                        <td> <strong>210.40DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    <tr>
+                        <td> 4</td>
+                        <td>Alson GC </td>
+                        <td> New Delhi </td>
+                        <td> 25 May, 2023 </td>
+                        <td>
+                            <p class="status delivered">Delivered</p>
+                        </td>
+                        <td> <strong>149.70DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    <tr>
+                        <td> 5</td>
+                        <td> Sarita Limbu </td>
+                        <td> Paris </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>399.99DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    <tr>
+                        <td> 6</td>
+                        <td>Alex Gonley </td>
+                        <td> London </td>
+                        <td> 23 Apr, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>399.99 DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td> 8</td>
+                        <td> Aayat Ali Khan </td>
+                        <td> Islamabad </td>
+                        <td> 30 Feb, 2023 </td>
+                        <td>
+                            <p class="status pending">Pending</p>
+                        </td>
+                        <td> <strong>149.70DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td>zAlson GC </td>
+                        <td> Dhaka </td>
+                        <td> 22 Dec, 2023 </td>
+                        <td>
+                            <p class="status cancelled">Cancelled</p>
+                        </td>
+                        <td> <strong>249.99 DT</strong> </td>
+                        <td><button><i class="fa-solid fa-trash"></i></button></td>
+                        <td><button><i class="fa-solid fa-pen-to-square"></i></button></td>
+
+                    </tr>
+                   
+                </tbody>
+            </table>
+            <div class="pagination ">
+                <div><i class="fa-solid fa-angles-left"></i></div>
+                <div><i class="fa-solid fa-angles-left"></i></div>
+                <div>1</div>
+                <div>2</div>
+                <div><i class="fa-solid fa-angle-right"></i></div>
+                <div><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+</html>
